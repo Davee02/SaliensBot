@@ -1,4 +1,4 @@
-### Saliens-Bot
+# Saliens-Bot
 
 ## What is it?
 

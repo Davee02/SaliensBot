@@ -14,7 +14,7 @@ lower_range = np.array([80,10,0], np.uint8)
 upper_range = np.array([130,250,250], np.uint8)
 
 while(True):
-    screen = np.array(ImageGrab.grab(bbox=(637,400,1590,860)))
+    screen = np.array(ImageGrab.grab(bbox=(637,380,1590,860)))
     screen = cv2.cvtColor(screen, cv2.COLOR_BGR2HSV)
 
     print("FPS: {}".format(1/(time.time() - last_time)))
@@ -29,6 +29,6 @@ while(True):
     
     for i in range(len(conts)):
             x,y,w,h=cv2.boundingRect(conts[i])
-            pyautogui.click(x + 637, y + 425, clicks=10)
+            pyautogui.click(x + 637, y + 405, clicks=10)
             pyautogui.press('1')
             break

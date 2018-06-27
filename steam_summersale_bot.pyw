@@ -10,8 +10,8 @@ last_time = time.time()
 start_time = time.clock()
 kernelOpen=np.ones((5,5))
 kernelClose=np.ones((20,20))
-lower_range = np.array([80,10,0], np.uint8)
-upper_range = np.array([130,250,250], np.uint8)
+lower_range = np.array([90,100,50], np.uint8)
+upper_range = np.array([100,250,250], np.uint8)
 
 while(True):
     screen = np.array(ImageGrab.grab(bbox=(637,380,1590,860)))
@@ -29,6 +29,6 @@ while(True):
     
     for i in range(len(conts)):
             x,y,w,h=cv2.boundingRect(conts[i])
-            pyautogui.click(x + 637, y + 405, clicks=10)
+            pyautogui.click(x + 637, y + 405, clicks=5)
             pyautogui.press('1')
             break

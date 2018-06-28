@@ -32,4 +32,3 @@ while(time.time() - start_time < 119):
             x,y,w,h=cv2.boundingRect(conts[i])
             pyautogui.click(x + 637, y + 405, clicks=5)
             pyautogui.press('1')
-            break

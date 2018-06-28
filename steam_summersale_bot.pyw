@@ -7,13 +7,14 @@ import pyautogui
 pyautogui.PAUSE = 0.001
 
 last_time = time.time()
-start_time = time.clock()
+start_time = time.time()
 kernelOpen=np.ones((5,5))
 kernelClose=np.ones((20,20))
 lower_range = np.array([90,100,50], np.uint8)
 upper_range = np.array([100,250,250], np.uint8)
 
-while(True):
+while(time.time() - start_time < 119):
+    print(time.time() - start_time)
     screen = np.array(ImageGrab.grab(bbox=(637,380,1590,860)))
     screen = cv2.cvtColor(screen, cv2.COLOR_BGR2HSV)
 

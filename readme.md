@@ -42,6 +42,6 @@ To use the script, do the following things:
 4. Double-Click the script (`steam_summersale_bot.pyw`)
 5. When the round is about to end (about 1-2 seconds before the end), input the combination `CTRL + ALT + DEL` to end it.
 
-**How to report a bug / issue?**
+## How to report a bug / issue?
 
 Just use the GitHub function for reporting a bug.

@@ -21,7 +21,7 @@ For installing with chocolatey do the following things:
     2. Input `Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))` into powershell
     3. Reopen your Powershell **as Admin**
 2. Install Python
-    1. Input `choco install python3`
+    1. Input `choco install python --version 3.6.6`
     2. When you're asked to confirm something, confirm it with `Y`
 3. Install Python packages
     1. After Chocolatey finished to install python, execute the following commands in the powershell:
